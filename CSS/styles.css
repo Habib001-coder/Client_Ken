@@ -4,6 +4,17 @@
     stroke-linecap: round;
 }
 
+.fa.fa-twitter,
+.fa.fa-codepen,
+.fa.fa-github,
+.fa.fa-youtube,
+.fa.fa-linkedin-square {
+    display: inline-block;
+    margin: 0 5px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
 
 /* .kebab {
     cursor: pointer;

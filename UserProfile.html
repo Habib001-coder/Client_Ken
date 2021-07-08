@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/tailwind.css">
+    <link rel="stylesheet" media="screen" href="CSS/font-awesome.min.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <!--============For Nav=========-->
+    <section>
+        <nav class="bg-green-600">
+            <div class="max-w-1/3xl mx-auto ">
+                <div class="relative flex items-center md:pl-8 sm:pl-2 h-16">
+                    <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex-shrink-0 flex items-center">
+                            <h1 class="text-white">aires</h1>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex-shrink-0 flex items-center">
+                            <h1 class="text-white  text-sm font-medium">Your Profile</h1>
+                        </div>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!--==========Notifications menus=========-->
+
+                        <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Notifications</span>
+            <!-- Heroicon name: outline/bell -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="none" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+          </button>
+
+                        <!--============ Profile Picture============-->
+                        <div class="ml-3 relative">
+                            <div>
+                                <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="sr-only">Open user menu</span>
+                <img class="h-8 w-8 rounded-full" src="/images/2021-05-27-154344.jpg" alt="My profile picture">
+              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- basics Details-->
+    <section class="mx-auto max-w-screen-sm h-full px-4 mt-20 w-full">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="flex items-center justify-between">
+                <h1 class="inline-block align-baseline font-bold text-sm text-green-600 hover:text-blue-800">
+                    Basic Details
+                </h1>
+                <button class="hover:shadow-md text-gray-700  shadow font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Edit
+              </button>
+            </div>
+            <div class="flex flex-wrap pt-2">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <h3 class="text-gray-700">First Name: <span class="text-green-600">George</span></h3>
+
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <h3 class="text-gray-700">Middle Name: <span class="text-green-600">Innocent</span></h3>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-6 px-3 pt-6">
+                <h3 class="text-gray-700">Last Name: <span class="text-green-600">Okumu</span>
+                </h3>
+                <hr>
+            </div>
+
+            <div class="mb-6 px-3 ">
+                <h3 class="text-gray-700">Primary Phone Number: <span class="text-green-600">0795901610</span></h3>
+                <hr>
+            </div>
+
+            <div class="mb-6 px-3">
+                <h3 class="text-gray-700">Primary Email: <span class="text-green-600">gokumu12@gmail.com</span></h3>
+                <hr>
+            </div>
+
+            <div class="flex flex-wrap pt-2">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <h3 class="text-gray-700">Gender: <span class="text-green-600">Male</span></h3>
+
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <h3 class="text-gray-700">Date of Birth: <span class="text-green-600">12/12/1998</span></h3>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-6 px-3 pt-4">
+                <h3 class="text-gray-700">PassPort/Id: <span class="text-green-600">12345678</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Additional Details-->
+    <section class="mx-auto max-w-screen-sm h-full px-4 mt-20 w-full">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="flex items-center justify-between">
+                <h1 class="inline-block align-baseline font-bold text-sm text-green-600 hover:text-blue-800">
+                    Additional Details
+                </h1>
+                <button class="hover:shadow-md text-gray-700  shadow font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Edit
+              </button>
+            </div>
+            <div class="mb-6 px-3 pt-6">
+                <h3 class="text-gray-700">Secondary Phone Number: <span class="text-green-600"></span>
+                </h3>
+                <hr>
+            </div>
+
+            <div class="mb-6 px-3 ">
+                <h3 class="text-gray-700">Secondary Email: <span class="text-green-600"></span></h3>
+                <hr>
+            </div>
+
+            <div class="flex flex-wrap pt-2">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <h3 class="text-gray-700">KRA PIN: <span class="text-green-600"></span></h3>
+
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <h3 class="text-gray-700">P.O BOX: <span class="text-green-600"></span></h3>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-6 px-3 pt-8">
+                <h3 class="text-gray-700">Area of Residence: <span class="text-green-600"></span></h3>
+                <hr>
+            </div>
+            <div class="mb-6 px-3 pt-4">
+                <h3 class="text-gray-700">Alternative Contact: <span class="text-green-600"></span></h3>
+                <hr>
+            </div>
+            <div class="mb-6 px-3 pt-2">
+                <h3 class="text-gray-700">Next of Kin: <span class="text-green-600"></span></h3>
+            </div>
+        </div>
+    </section>
+    <!--Change password-->
+    <section class="mx-auto max-w-screen-sm h-full px-4 mt-20 w-full ">
+        <button class="shadow-lg p-4">Change Password</button>
+    </section>
+
+    <!--Farm Details-->
+    <section class="mx-auto max-w-screen-sm h-full px-4 mt-20 w-full">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="flex items-center justify-between">
+                <h1 class="inline-block align-baseline font-bold text-sm text-green-600 hover:text-blue-800">
+                    Farm Details
+                </h1>
+                <button class="hover:shadow-md text-gray-700  shadow font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Edit
+              </button>
+            </div>
+            <div class="mb-6 px-3 pt-6">
+                <h3 class="text-gray-700">Showing Details for: <span class="text-green-600"></span>
+                </h3>
+            </div>
+            <div class="pb-4 text-green-500">
+                <h3 class="font-bold">Basic Farm Details</h3>
+            </div>
+
+            <div class="mb-6 px-3 ">
+                <h3 class="text-gray-700">Farm Location: <span class="text-green-600">Busia, Matayos</span></h3>
+                <hr>
+            </div>
+
+            <div class="flex flex-wrap pt-2">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <h3 class="text-gray-700">Farm Size: <span class="text-green-600">3 acres</span></h3>
+
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <h3 class="text-gray-700">Farm Postal Address: <span class="text-green-600">25266262, Busia</span></h3>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-6 px-3 pt-2">
+                <h3 class="text-gray-700">Farm Status <span class="text-green-600"> Owned</span></h3>
+            </div>
+
+            <div class="text-green-500">
+                <h3 class="font-bold">Additional Farm Details</h3>
+            </div>
+            <div class="mb-6 px-3 pt-4">
+                <h3 class="text-gray-700">LR NO. <span class="text-green-600">1235</span></h3>
+                <hr>
+            </div>
+            <div class="mb-6 px-3 pt-2">
+                <h3 class="text-gray-700">Lattitide, Longitute and altitude <span class="text-green-600"> 678-900,-77.9049, 678m</span></h3>
+                <hr>
+            </div>
+            <div class="mb-6 px-3 pt-2">
+                <h3 class="text-gray-700">The farm is being ran as <span class="text-green-600">sole Proprietorship</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-gray-800">
+            <div class="flex justify-center">
+                <p class=" p-4 text-white ">FAQS and More</p>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="p-4 md:flex md:items-center md:justify-center w-full md:w-1/2  ">
+                    <ul class=" text-white">
+                        Legal
+                        <li class="md:mx-2 md:inline leading-7 text-sm " id="footer-navi-2 "><a class="text-white underline text-small " href="/privacy ">Privacy Policy</a></li>
+                        <li class="md:mx-2 md:inline leading-7 text-sm " id="footer-navi-2 "><a class="text-white underline text-small " href="/licence ">Lincences</a></li>
+                        <li class="md:mx-2 md:inline leading-7 text-sm " id="footer-navi-2 "><a class="text-white underline text-small " href="/privacy ">Terms of Service</a></li>
+                        <li class="md:mx-2 md:inline leading-7 text-sm " id="footer-navi-2 "><a class="text-white underline text-small " href="/disclaimers ">Legal Notices and Disclaimers</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/2 pt-4 ">
+                    <div class="flex items-center justify-center space-x-3">
+
+                        <button class="bg-blue-500 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                            <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </button>
+                        <button class="bg-blue-300 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                            <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </button>
+                        <button class="bg-pink-600 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                            <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Pinterest icon</title><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center bg-gray-900 p-4">
+            <div class=" flex flex-wrap pt-4">
+                <div class="w-full md:w-1/2 ">
+                    <p class="text-white ">aires</p>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <p class="text-white">Copyright 2021 aires</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
