@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/tailwind.css">
+    <!-- Required font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <title>Farm</title>
+</head>
+
+<body>
+    <!--============For Nav=========-->
+    <section>
+        <nav class="bg-green-600 ">
+            <div class="max-w-1/3xl mx-auto ">
+                <div class="relative flex items-center md:pl-8 sm:pl-2 h-16">
+                    <div class="flex-1 flex  sm:items-stretch sm:justify-start">
+                        <div class="px-2">
+                            <h1 class="text-white">aires</h1>
+                        </div>
+                    </div>
+                    <div class="md:px-96 pr-24 justify-center">
+                        <div class="flex-1 flex items-center justify-center shadow-2xl opacity-100  bg-green-700">
+                            <button class="flex items-center text-white  text-sm font-medium p-2">
+                                <span class="float-left">Nanaimo</span>
+
+                                <svg class="h-4 float-right pl-4 fill-current text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                  <g>
+                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                                  </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!--==========Notifications menus=========-->
+
+                        <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                <span class="sr-only">Notifications</span>
+                <!-- Heroicon name: outline/bell -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="none" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+              </button>
+
+                        <!--============ Profile Picture============-->
+                        <div class="relative md:mr-16">
+                            <div class="p-2">
+                                <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="/images/2021-05-27-154344.jpg" alt="My profile picture">
+                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- <aside class="aside1">
+        <div>
+
+            <h1>Farm</h1>
+        </div>
+        <div>
+
+            <h1>Crop</h1>
+        </div>
+        <div>
+
+            <h1>Soil</h1>
+        </div>
+
+        <div>
+
+            <h1>Resource</h1>
+        </div>
+
+        <div>
+
+            <h1>Analytics</h1>
+        </div>
+        <div>
+
+            <h1>Classified</h1>
+        </div>
+
+        <div class="p-6">
+            <h1>Busia Weather bulletin</h1>
+            <div class="justify-center">
+                <div class="flex-1 flex items-center justify-center shadow-2xl opacity-100  bg-green-700">
+                    <button class="flex items-center text-white  text-sm font-medium p-2">
+                        <span class="float-left">Nanaimo</span>
+
+                        <svg class="h-4 float-right pl-4 fill-current text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                          <g>
+                            <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                          </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Rainfall</h3>
+            <div>
+                <p>Map Graph here</p>
+            </div>
+
+            <p>
+                Cloudy Mornings with light rains in the afternoons. Ideal for emergence and flowering crops.</p>
+        </div>
+        <div>
+
+        </div>
+    </aside> -->
+    <!-- <aside class="aside2 h-full">
+        <div>
+
+            <h1>Farm</h1>
+        </div>
+        <div>
+
+            <h1>Crop</h1>
+        </div>
+        <div>
+
+            <h1>Soil</h1>
+        </div>
+
+        <div>
+
+            <h1>Resource</h1>
+        </div>
+
+        <div>
+
+            <h1>Analytics</h1>
+        </div>
+        <div>
+
+            <h1>Classified</h1>
+        </div>
+
+        <div class="p-6">
+            <h1>Busia Weather bulletin</h1>
+            <div class="justify-center">
+                <div class="flex-1 flex items-center justify-center shadow-2xl opacity-100  bg-green-700">
+                    <button class="flex items-center text-white  text-sm font-medium p-2">
+                        <span class="float-left">Nanaimo</span>
+
+                        <svg class="h-4 float-right pl-4 fill-current text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                          <g>
+                            <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                          </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Rainfall</h3>
+            <div>
+                <p>Map Graph here</p>
+            </div>
+
+            <p>
+                Cloudy Mornings with light rains in the afternoons. Ideal for emergence and flowering crops.</p>
+        </div>
+        <div>
+
+        </div>
+    </aside> -->
+
+    <section class="container mx-auto px-4 md:px-12 justify-center">
+        <div class="flex flex-wrap">
+            <div class="w-full sm:w-6/12 md:w-6/12 px-4 pt-4">
+                <div class="relative inline-flex align-middle w-full">
+                    <button class="bg-green-600 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="openDropdown(event,'dropdown-example-1')">
+                        <span class="float-left">All Fields</span>
+
+                        <svg class="h-4 float-right pl-4 fill-current text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                          <g>
+                            <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                          </g>
+                        </svg>
+                </button>
+                    <div class="hidden bg-white  text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1" style="min-width:12rem" id="dropdown-example-1">
+                        <a href="#" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 ">
+                    Field 1
+                  </a>
+                        <a href="#" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 ">
+                    Field 2
+                  </a>
+                        <a href="#" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                    Field 3
+                  </a>
+                        <div class="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25"></div>
+                        <a href="#" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                            All Crops
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-6/12 md:w-6/12 px-4 pt-4">
+                <div class="relative inline-flex align-middle w-full">
+                    <!-- =========Button trigger modal -->
+                    <button class="bg-white  active:bg-green-600 font-bold  px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-example-regular')">
+                        <i class="fas fa-plus"></i>
+                        <span class="float-right pl-4 text-green-600">New Crop</span>
+                </button>
+                    <!--============Modal -->
+                    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-example-regular">
+                        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                            <!--content-->
+                            <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                <!--header-->
+                                <button class="p-1 ml-auto bg-transparent border-0 text-gray-300 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-example-regular')">
+                                    <span class="bg-transparent h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                        <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                          </svg>
+                                    </span>
+                                </button>
+                                <!--=========Modal Header==========-->
+                                <h2 class="text-center text-green-700 text-2xl font-semibold">Search For Crops</h2>
+                                <div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+                                    <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                                        <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                                          <i class="fas fa-search"></i>
+                                        </span>
+                                        <input type="text" placeholder="Crop Name" class="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-full pl-10" />
+                                    </div>
+                                </div>
+                                <!--body-->
+                                <div class="relative p-6 flex-auto">
+                                    <p>Filter your results: </p>
+                                    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                                            <!--======Duration Button-->
+                                            <button class="flex items-center text-white bg-green-600  text-l font-medium p-2 ease-linear transition-all duration-150">
+                                                <i class=" fas fa-clock pr-2 "></i>
+                                                <span class="float-center ">Any Duration</span>
+                        
+                                                <svg class="h-4 float-right pl-4 fill-current text-white " version="1.1 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 129 129 " xmlns:xlink="http://www.w3.org/1999/xlink " enable-background="new 0
+                                                0 129 129 ">
+                                                  <g>
+                                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z "/>
+                                                  </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <!--====Categories Part-->
+                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                                            <!--========Categories dropdown-->
+
+                                            <!--=========Categeries Button-->
+                                            <button class="flex items-center text-white bg-green-600 text-l font-medium p-2 ">
+                                                <i class="fa fa-bars pr-2 "></i>
+                                                <span class="float-left ">All Crop Categories</span>
+
+                                                <svg class="h-4 float-right pl-4 fill-current text-white " version="1.1 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 129 129 " xmlns:xlink="http://www.w3.org/1999/xlink " enable-background="new 0
+                                                0 129 129 ">
+                                                  <g>
+                                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z "/>
+                                                  </g>
+                                                </svg>
+                                                </button>
+                                        </div>
+                                        <!--========Popularity-->
+                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                                            <!--==========Popularity Dropdown button-->
+                                            <button class=" flex items-center text-white bg-green-600 text-l font-medium p-2 ">
+                                                <div class="pr-2 ">
+                                                    <i class="fa fa-arrow-down "></i>
+                                                    <i class="fa fa-arrow-up "></i>
+                                                </div>
+                                                <span class="float-left ">Popularity</span>
+                        
+                                                <svg class="h-4 float-right pl-4 fill-current text-white " version="1.1 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 129 129 " xmlns:xlink="http://www.w3.org/1999/xlink " enable-background="new 0
+                                                0 129 129 ">
+                                                  <g>
+                                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z "/>
+                                                  </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 ">
+                                        <!--=======Results Header-->
+                                        <h2><span class="font-bold ">10 Results </span>recommended for <span class="font-bold ">Elugulu, Butula, Busia</span> <span class="pl-2 "><i class="fas fa-info-circle "></i></span></h2>
+                                        <!--========Results Body-->
+                                        <div class="flex flex-wrap -mx-1 lg:-mx-4 ">
+                                            <!--========Overflow body-->
+                                            <div class="my-1 px-1 w-full md:w-8/12 lg:my-4 lg:px-4 lg:w-8/12 ">
+                                                <div class="overflow-auto h-72 ... ">
+                                                    <div class="flex flex-wrap -mx-1 lg:-mx-4 ">
+                                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
+                                                            <div class="shadow-xl ">
+                                                                <div class="pb-4 pl-4 ">
+                                                                    <label class="inline-flex items-center mt-3 ">
+                                                                        <input type="checkbox " class="form-check text-green-600 ">
+                                                                        <span class="ml-2 ">H6218 (maize)</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="grid grid-cols-3 gap-4 pl-4 pb-2 ">
+                                                                    <div>
+                                                                        <p>Altitude:</p>
+                                                                        <p>800 - 1700m</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Temp:</p>
+                                                                        <p>35 c</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Soil:</p>
+                                                                        <p>Clay</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--==========second check-->
+                                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
+                                                            <div class="shadow-xl ">
+                                                                <div class="pb-4 pl-4 ">
+                                                                    <label class="inline-flex items-center mt-3 ">
+                                                                        <input type="checkbox " class="form-check text-green-600 ">
+                                                                        <span class="ml-2 ">H6218 (maize)</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="grid grid-cols-3 gap-4 pl-4 pb-2 ">
+                                                                    <div>
+                                                                        <p>Altitude:</p>
+                                                                        <p>800 - 1700m</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Temp:</p>
+                                                                        <p>35 c</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Soil:</p>
+                                                                        <p>Clay</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--===========Third Check Item-->
+                                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
+                                                            <div class="shadow-xl ">
+                                                                <div class="pb-4 pl-4 ">
+                                                                    <label class="inline-flex items-center mt-3 ">
+                                                                        <input type="checkbox " class="form-check text-green-600 ">
+                                                                        <span class="ml-2 ">H6218 (maize)</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="grid grid-cols-3 gap-4 pl-4 pb-2 ">
+                                                                    <div>
+                                                                        <p>Altitude:</p>
+                                                                        <p>800 - 1700m</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Temp:</p>
+                                                                        <p>35 c</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Soil:</p>
+                                                                        <p>Clay</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--=========Fourth Check -->
+                                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
+                                                            <div class="shadow-xl ">
+                                                                <div class="pb-4 pl-4 ">
+                                                                    <label class="inline-flex items-center mt-3 ">
+                                                                        <input type="checkbox " class="form-check text-green-600 ">
+                                                                        <span class="ml-2 ">H6218 (maize)</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="grid grid-cols-3 gap-4 pl-4 pb-2 ">
+                                                                    <div>
+                                                                        <p>Altitude:</p>
+                                                                        <p>800 - 1700m</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Temp:</p>
+                                                                        <p>35 c</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Soil:</p>
+                                                                        <p>Clay</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--==========Fifth Check Item-->
+                                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
+                                                            <div class="shadow-xl ">
+                                                                <div class="pb-4 pl-4 ">
+                                                                    <label class="inline-flex items-center mt-3 ">
+                                                                        <input type="checkbox " class="form-check text-green-600 ">
+                                                                        <span class="ml-2 ">H6218 (maize)</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="grid grid-cols-3 gap-4 pl-4 pb-2 ">
+                                                                    <div>
+                                                                        <p>Altitude:</p>
+                                                                        <p>800 - 1700m</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Temp:</p>
+                                                                        <p>35 c</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Soil:</p>
+                                                                        <p>Clay</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--=======Sixth Check-->
+                                                        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 ">
+                                                            <div class="shadow-xl ">
+                                                                <div class="pb-4 pl-4 ">
+                                                                    <label class="inline-flex items-center mt-3 ">
+                                                                        <input type="checkbox " class="form-check text-green-600 ">
+                                                                        <span class="ml-2 ">H6218 (maize)</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="grid grid-cols-3 gap-4 pl-4 pb-2 ">
+                                                                    <div>
+                                                                        <p>Altitude:</p>
+                                                                        <p>800 - 1700m</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Temp:</p>
+                                                                        <p>35 c</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <p>Soil:</p>
+                                                                        <p>Clay</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--========Drag and drop section-->
+                                            <div class="my-1 px-1 w-full md:w-4/12 lg:my-4 lg:px-4 lg:w-4/12 ">
+                                                <div class="pt-6 ">
+                                                    <div class="box-content h-48 w-48 p-4 border-4 ">
+                                                        <div class="flex items-center justify-center ">
+
+                                                            <p class="text-green-700 text-center pt-16 "><i class="fa fa-plus-circle "></i>
+                                                                <br>Drag Crops here to compare</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--footer-->
+                                <div class="flex justify-between ">
+                                    <!--=======Drop up-->
+                                    <div class=" ">
+                                        <div @click.away="open=f alse " class="relative " x-data="{ open: false } ">
+                                            <div class="relative ">
+                                                <div x-show="open " x-transition:enter="transition ease-out duration-100 " x-transition:enter-start="transform opacity-0 scale-95 " x-transition:enter-end="transform opacity-100 scale-100
+                                                " x-transition:leave="transition ease-in duration-75 " x-transition:leave-start="transform opacity-100 scale-100 " x-transition:leave-end="transform opacity-0 scale-95 " class="bottom-0 origin-top-right absolute left-0 mt-2 -mr-1
+                                                w-48 rounded-md shadow-lg ">
+                                                    <div class="py-1 rounded-md bg-white shadow-xs relative ">
+                                                        <a href="# " class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 ">
+                                                            Field 1
+                                                          </a>
+                                                        <a href="# " class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 ">
+                                                            Field 2
+                                                          </a>
+                                                        <a href="# " class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 ">
+                                                            Field 3
+                                                          </a>
+                                                        <div class="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25 "></div>
+                                                        <a href="# " class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 ">
+                                                            New Field
+                                                          </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--==========All Fields Dropup button-->
+                                            <div class="p-8 ">
+                                                <div class="flex justify-between ">
+                                                    <div>
+                                                        <p>Add to: </p>
+                                                    </div>
+                                                    <button @click="open=! open " class="bg-green-600 flex items-center text-l text-white focus:outline-none focus:shadow-solid transition p-2 ease-in-out duration-150 ">
+                                                    <span class="float-left pr-2 "><i class="fa fa-book "></i></span>
+                                                    <span class="float-center ">All Fields</span>
+                                                            <svg class="h-4 float-right pl-4 fill-current text-white " version="1.1 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 129 129 " xmlns:xlink="http://www.w3.org/1999/xlink
+                                                " enable-background="new 0 0 129 129 ">
+                                                              <g>
+                                                                <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2
+                                                0.1-5.8z "/>
+                                                              </g>
+                                                            </svg>
+                                                </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--===========Add crop-->
+                                    <div class="p-8 ">
+                                        <button class="bg-white active:bg-green-600 font-bold px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 " type="submit ">
+                                            <i class="fas fa-plus "></i>
+                                            <span class="float-right pl-4 text-green-600 ">Add Crop</span>
+                                    </button>
+                                    </div>
+                                    <!--============Finish Button-->
+                                    <div class="p-8 ">
+                                        <button class="bg-white text-green-700 active:bg-green-600 font-bold p-2 text-l rounded shadow hover:shadow-md border-2 border-green-600 focus:outline-none ">
+                                            Finished
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container my-12 mx-auto px-4 md:px-12 justify-center ">
+            <div class="flex flex-wrap -mx-1 lg:-mx-4 ">
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                    <article class="overflow-hidden shadow-2xl ">
+                        <div class="text-xl font-semibold pb-4 bg-pink-500 w-full pt-2 ">
+                            <h1 class="text-white pl-8 ">Filed 1</h1>
+                            <h1 class="text-white pl-8 ">DH01 Maize</h1>
+                        </div>
+
+                        <div class="my-2 pl-4 ">
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Size</span> <span>1.5 acres</span>
+                            </h3>
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Current Stage: </span> <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                            </h3>
+                            <h3 class="p-2 "><span class="font-bold ">Estimated Yield: </span> <span>90,000kgs</span></h3>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                    <article class="overflow-hidden shadow-2xl ">
+                        <div class="text-xl font-semibold pb-4 bg-yellow-400 w-full-600 pt-2 ">
+                            <h1 class="text-white pl-8 ">Filed 2</h1>
+                            <h1 class="text-white pl-8 ">Gross Michel Banana</h1>
+                        </div>
+
+                        <div class="my-2 pl-4 ">
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Size</span> <span>1.5 acres</span>
+                            </h3>
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Current Stage: </span> <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                            </h3>
+                            <h3 class="p-2 "><span class="font-bold ">Estimated Yield: </span> <span>90,000kgs</span></h3>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                    <article class="overflow-hidden shadow-2xl ">
+                        <div class="text-xl font-semibold pb-4 bg-green-500 w-full-600 pt-2 ">
+                            <h1 class="text-white pl-8 ">Filed 3</h1>
+                            <h1 class="text-white pl-8 ">
+                                KAT/B-9 Bean</h1>
+                        </div>
+
+                        <div class="my-2 pl-4 ">
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Size</span> <span>1.5 acres</span>
+                            </h3>
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Current Stage: </span> <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                            </h3>
+                            <h3 class="p-2 "><span class="font-bold ">Estimated Yield: </span> <span>90,000kgs</span></h3>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap -mx-1 lg:-mx-4 ">
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                    <article class="overflow-hidden ">
+                        <div class="text-xl font-semibold w-full-600 p-4 ">
+                            <h1 class="text-gray ">Pending Tasks</h1>
+                        </div>
+
+                        <div class="my-2 pl-4 shadow-2xl border-2 border-green-600 ">
+                            <h3 class="pt-4 pl-2 ">
+                                Plant Seeds
+                            </h3>
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Due: </span> <span>1st July 2021</span>
+                            </h3>
+                            <div class="pb-4 ">
+                                <label class="inline-flex items-center mt-3 ">
+                                    <input type="radio " class="form-radio h-5 w-5 text-green-600 "><span class="ml-2 text-gray-700 ">Mark as Complete</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                    <article class="overflow-hidden ">
+                        <div class="text-xl font-semibold w-full-600 p-4 ">
+                            <h1 class="pt-7 "></h1>
+                        </div>
+
+                        <div class="my-2 pl-4 shadow-2xl border-2 border-green-600 ">
+                            <h3 class="pt-4 pl-2 ">
+                                Buy Seeds
+                            </h3>
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Due: </span> <span>1st September 2021</span>
+                            </h3>
+                            <div class="pb-4 ">
+                                <label class="inline-flex items-center mt-3 ">
+                                    <input type="radio " class="form-radio h-5 w-5 text-green-600 "><span class="ml-2 text-gray-700 ">Mark as Complete</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                    <article class="overflow-hidden ">
+                        <div class="text-xl font-semibold w-full-600 p-4 ">
+                            <h1 class="text-gray ">Next Task</h1>
+                        </div>
+
+                        <div class="my-2 pl-4 shadow-2xl border-2 border-green-600 ">
+                            <h3 class="pt-4 pl-2 ">
+                                Nursery Sowing
+                            </h3>
+                            <h3 class="p-2 ">
+                                <span class="font-bold ">Due: </span> <span>1st Dec 2021</span>
+                            </h3>
+                            <div class="pb-4 ">
+                                <label class="inline-flex items-center mt-3 ">
+                                    <input type="radio " class="form-radio h-5 w-5 text-green-600 "><span class="ml-2 text-gray-700 ">Mark as Complete</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================Farm perfomance==========================-->
+    <section>
+        <!--============Small Screens-->
+        <!-- <div>
+            <div id="chart_div " style="height: 10; width: 20; "></div>
+        </div> -->
+        <!--============Medium Screens and above-->
+        <div class="w-full md:h-full ">
+            <div id="chart_div "></div>
+        </div>
+
+    </section>
+    <!--=============External Js link============-->
+    <script src="Js/scripts.js "></script>
+    <!--=============Popper Js============-->
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js " charset="utf-8 "></script>
+    <!--==========Alpine Link===========-->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js " defer></script>
+    <!--========Start of Google Graph==========-->
+    <script type="text/javascript " src="https://www.gstatic.com/charts/loader.js "></script>
+    <script type="text/javascript ">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+
+</body>
+<style>
+    .aside1 {
+        float: left;
+        width: 170px;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgb(148, 187, 187);
+    }
+    
+    .geo {
+        display: none;
+    }
+    
+    .aside2 {
+        float: right;
+        width: 170px;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgb(148, 187, 187);
+    }
+</style>
+
+</html>
