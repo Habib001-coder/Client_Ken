@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/tailwind.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Required font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <title>Login</title>
 </head>
 
@@ -18,12 +20,12 @@
                x
             </a>
                 <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
-              <i class="fas fa-bars"></i>
+              <i class="fa fa-bars"></i>
             </button>
             </div>
-            <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-900" href="projects.html">
-                    Project Pages 
+            <div class="w-full relative flex justify-between lg:w-auto hover:bg-green-200 px-4 lg:static lg:block lg:justify-start">
+                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-900" href="farm.html">
+                    Farm
                 </a>
                 <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
               <i class="fas fa-bars"></i>
@@ -32,23 +34,25 @@
             <div class="lg:flex flex-grow items-center hidden" id="example-collapse-navbar">
                 <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
                     <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-900 hover:opacity-75" href="#george">
-                            <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Documentation</span>
+                        <a class="px-3 py-3 flex items-center hover:bg-green-200 font-bold leading-snug text-gray-900 hover:opacity-75" href="#george">
+                            <span class="ml-2"><i class="far fa-list-alt"></i>
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-900 hover:opacity-75" href="#george">
-                            <i class="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Comment</span>
+                        <a class="px-3 py-3 flex items-center hover:bg-green-200 font-bold leading-snug text-gray-900 hover:opacity-75" href="#george">
+                            <span class="ml-2"><i class="fa fa-comment-alt"></i>
+                                </span>
                         </a>
                     </li>
                     <div class="nav-item">
                         <div class="relative inline-flex align-middle w-full">
-                            <button class="text-gray-900 font-bold uppercase text-sm px-6 py-3  hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 ease-linear transition-all duration-150" type="button" id="dropdown">
-                              
+                            <button class="font-bold uppercase text-sm px-2 py-3 hover:bg-green-200 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="openDropdown(event, 'dropdown-example-1')">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                             </button>
-                            <div class="hidden bg-white  text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1" style="min-width:12rem" id="dropdown">
-                                <a href="#" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
-                                    show hotspots
+                            <div class="hidden bg-white  text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1" style="min-width:12rem" id="dropdown-example-1">
+                                <a href="UserProfile.html" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    User Profile
                                 </a>
                                 <a href="#" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
                                     show comments  
@@ -71,8 +75,8 @@
                     </div>
             </div>
             <div class="nav-item">
-                <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-900 hover:opacity-75" href="UserProfile.html">
-                    <i class="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span class="ml-2">AxureLogo</span>
+                <a class="px-3 py-2 flex items-center text-xs hover:bg-green-200 font-bold leading-snug text-gray-900 hover:opacity-75" href="UserProfile.html">
+                    <span class="ml-2">AxureLogo</span>
                 </a>
             </div>
             </ul>
@@ -94,32 +98,32 @@
                             <label class="block text-sm text-white " for="email "></label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " type="email " id="email " placeholder="Email address or username " aria-label="email " required>
                         </div>
-                        <div class="mt-2 pt-2 ">
+                        <div class="mt-2 pt-2">
                             <label class="block text-sm text-white "></label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " type="password " id="password " placeholder="Password " arial-label="password " required>
                         </div>
-                        <div class="pt-4 ">
+                        <div class="pt-4">
                             <label class="inline-flex items-center cursor-pointer ">
-                        <input id="customCheckLogin " type="radio " class="form-radio text-gray-800 ml-1 w-5 h-5 " style="transition: all 0.15s ease 0s; "><span class="ml-2 text-sm font-semibold text-gray-600 ">Remember me</span></label>
+                        <input id="customCheckLogin" type="radio" class="form-radio text-gray-800 ml-1 w-5 h-5" style="transition: all 0.15s ease 0s;"><span class="ml-2 text-sm font-semibold text-gray-600">Remember me</span></label>
                         </div>
-                        <div class="text-center ">
+                        <div class="text-center">
                             <button class="px-4 py-1 text-white font-light tracking-wider bg-green-600 hover:bg-blue-500 rounded " type="submit ">Sign in</button>
                         </div>
                     </form>
-                    <div class="p-8 ">
+                    <div class="p-8">
                         <p>Dont have an account?Click <a class="font-bold text-sm text-500 text-green-700 underline hover:text-red-400 " target="_blank " href="createAccount.html ">here</a> to create one.
                         </p>
                     </div>
 
                 </div>
-                <p class="text-white pt-8 pl-8 ">By logging in or registering with us, you agree to our <span class="underline ">terms of use</span></p>
+                <p class="text-white pt-8 pl-8">By logging in or registering with us, you agree to our <span class="underline ">terms of use</span></p>
             </div>
         </div>
     </section>
     <!-- =========================Start aside one=================-->
-    <aside class="w-full">
+    <!-- <aside class="w-full">
         <h1>George Okumuiu </h1>
-    </aside>
+    </aside> -->
     <!-- =========================End of start one================-->
     <style>
         .login {
